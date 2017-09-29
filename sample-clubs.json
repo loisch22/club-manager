@@ -1,0 +1,38 @@
+{
+  "clubs": [{
+    "name": "Sacajawea Boys and Girls Club",
+    "address": "9501 20th Ave NE",
+    "city": "Seattle",
+    "number": 2065261357,
+    "image": "http://positiveplace.org/PublishingImages/Locations/ELCC%20NE/Sacagawea.JPG",
+    "weekendHours": false,
+    "summerHours": true,
+    "mealsProvided": true,
+    "teenCenter": false,
+    "website": "http://positiveplace.org/locations/childcare/Pages/sacajaweachildcare.aspx"
+  },
+  {
+    "name": "Renton Skyway Boys and Girls Club",
+    "address": "12400 80th Ave S",
+    "city": "Seattle",
+    "number": 2064361920,
+    "image": "http://positiveplace.org/locations/childcare/PublishingImages/Pages/rentonskywaychildcare/rsz_img_9425.jpg",
+    "weekendHours": true,
+    "summerHours": true,
+    "mealsProvided": true,
+    "teenCenter": true,
+    "website": "http://positiveplace.org/locations/rentonskyway/Pages/home.aspx"
+  },
+  {
+    "name": "Shawn and John Goodman Club at Ballard",
+    "address": "1767 NW 64th St",
+    "city": "Seattle",
+    "number": 2064361870,
+    "image": "http://positiveplace.org/PublishingImages/Multi-Purpose/13_350x150.jpg",
+    "weekendHours": true,
+    "summerHours": false,
+    "mealsProvided": false,
+    "teenCenter": true,
+    "website": "http://positiveplace.org/locations/ballard/aboutus/Pages/aboutus.aspx"
+  }]
+}

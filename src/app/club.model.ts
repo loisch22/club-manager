@@ -1,15 +1,14 @@
 export class Club {
-  weekendHours: boolean = false;
-  summerHours: boolean = false;
-  mealsProvided: boolean = false;
-  teenCenter: boolean = false;
   constructor(
     name: string,
     address: string,
-    state: string,
-    zip: number,
+    city: string,
     number: number,
-    startHour: string,
-    endHour: string
+    image: string,
+    weekendHours: boolean,
+    summerHours: boolean,
+    mealsProvided: boolean,
+    teenCenter: boolean,
+    website: string
   ){}
 }

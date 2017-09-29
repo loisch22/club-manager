@@ -1,3 +1,18 @@
-<p>
-  home works!
-</p>
+<!-- <select (change)="onGoalChange($event.target.value)">
+  <option value="allGoals" selected="selected">All Goals</option>
+  <option value="Expensive">Expensive</option>
+  <option value="Inexpensive">Inexpensive</option>
+</select> -->
+
+<div class="branch-list">
+  <div class="card-deck">
+    <div class="card" *ngFor = "let club of clubs | async">
+      <img id="club-image" (click) = "showDetails(club)"class="card-img-top" src={{club.image}} alt="Thumbnail for project">
+      <div class="card-block">
+        <h4 class="card-title" (click) = "showDetails(club)">{{club.name}}</h4>
+        <p class="card-text address"><small class="text-muted"><strong>Address:</strong> {{club.address}}</small></p>
+        <p class="card-text address"><small class="text-muted"><strong>City:</strong> {{club.city}}</small></p>
+        <p class="card-text number"><small class="text-muted"><strong>Number:</strong> {{club.number}}</small></p>
+      </div>
+    </div>
+</div>

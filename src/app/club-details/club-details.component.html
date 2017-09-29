@@ -1,0 +1,25 @@
+<div *ngIf = "selectedClub | async">
+  <div class="details-top">
+    <div class="container details-top">
+      <div class="row title">
+        <div class="col-md-7">
+          <img src="{{(selectedClub | async).image}}" alt="club image" class="club-image">
+        </div>
+        <div class="col-md-3">
+          <div class="card-deck">
+            <div class="card">
+              <h3 class="card-title">{{(selectedClub | async).name}}</h3>
+              <p class="card-text address"><small class="text-muted"><strong>Address:</strong> {{(selectedClub | async).address}}</small></p>
+              <p class="card-text address"><small class="text-muted"><strong>City:</strong> {{(selectedClub | async).city}}</small></p>
+              <p class="card-text number"><small class="text-muted"><strong>Number:</strong> {{(selectedClub | async).number}}</small></p>
+              <p class="card-text number"><small class="text-muted"><strong>Weekend Hours:</strong> {{(selectedClub | async).weekendHours}}</small></p>
+              <p class="card-text number"><small class="text-muted"><strong>Summer Hours:</strong> {{(selectedClub | async).summerHours}}</small></p>
+              <p class="card-text number"><small class="text-muted"><strong>Weekend Hours:</strong> {{(selectedClub | async).mealsProvided}}</small></p>
+              <p class="card-text number"><small class="text-muted"><strong>Weekend Hourse:</strong> {{(selectedClub | async).teenCenter}}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
