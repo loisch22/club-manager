@@ -3,7 +3,6 @@
   <option value="Expensive">Expensive</option>
   <option value="Inexpensive">Inexpensive</option>
 </select> -->
-
 <div class="branch-list">
   <div class="card-deck">
     <div class="card" *ngFor = "let club of clubs | async">
@@ -13,6 +12,9 @@
         <p class="card-text address"><small class="text-muted"><strong>Address:</strong> {{club.address}}</small></p>
         <p class="card-text address"><small class="text-muted"><strong>City:</strong> {{club.city}}</small></p>
         <p class="card-text number"><small class="text-muted"><strong>Number:</strong> {{club.number}}</small></p>
+        <div *ngIf="currentRoute === '/admin'">
+          <app-edit-club [selectedClub]="club"></app-edit-club>
+        </div>
       </div>
     </div>
 </div>

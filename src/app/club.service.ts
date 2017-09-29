@@ -14,8 +14,24 @@ export class ClubService {
     return this.clubs;
   }
 
-  getClubByKey(clubKey:string)
-  {
+  getClubByKey(clubKey:string){
     return this.database.object('clubs/' + clubKey);
   }
+
+  updateClub(localUpdatedClub){
+    let clubEntryInFirebase = this.getClubByKey(localUpdatedClub.$key);
+    clubEntryInFirebase.update({
+      name: localUpdatedClub.name,
+      address: localUpdatedClub.address,
+      city: localUpdatedClub.city,
+      number: localUpdatedClub.number,
+      image: localUpdatedClub.image,
+      weekendHours: localUpdatedClub.weekendHours,
+      summerHours: localUpdatedClub.summerHours,
+      mealsProvided: localUpdatedClub.mealsProvided,
+      teenCenter: localUpdatedClub.teenCenter,
+      website: localUpdatedClub.website
+    })
+  }
+
 }
