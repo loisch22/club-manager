@@ -1,0 +1,44 @@
+<h4>Add New Club</h4>
+
+<label>Club name:</label>
+<input #name type="text">
+<br>
+
+<label>Club address:</label>
+<input [(ngModel)]="selectedClub.address">
+<br>
+
+<label>Club city:</label>
+<input [(ngModel)]="selectedClub.city">
+<br>
+
+<label>Club number:</label>
+<input [(ngModel)]="selectedClub.number">
+<br>
+
+<label>Club image (URL):</label>
+<input [(ngModel)]="selectedClub.image">
+<br>
+
+<label>Club weekend hours available:</label>
+<input [(ngModel)]="selectedClub.weekendHours">
+<br>
+
+<label>Club summer hours available:</label>
+<input [(ngModel)]="selectedClub.summerHours">
+<br>
+
+<label>Club meals provided:</label>
+<input [(ngModel)]="selectedClub.mealsProvided">
+<br>
+
+<label>Club teen center available:</label>
+<input [(ngModel)]="selectedClub.teenCenter">
+<br>
+
+<label>Club website (URL):</label>
+<input [(ngModel)]="selectedClub.website">
+
+<button (click)="beginUpdatingClub(selectedClub)" class="btn btn-success">Update</button>
+
+<button (click)="beginDeletingClub(selectedClub)" class="btn btn-danger">Delete</button>

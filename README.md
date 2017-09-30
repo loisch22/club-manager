@@ -22,6 +22,9 @@ _1. Download github repository: <a>https://github.com/loisch22/club-manager.git<
 | 5. Administrators can edit a clubs information and the new information should be posted on the home page | `click` edit | Form to edit a new club |
 | 6. Administrators can delete a club | `click` delete | Confirmation to delete - Club is deleted from list |
 
+#Wishlist
+Have `add club` button in admin view NOT navbar.
+
 # ClubManager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.

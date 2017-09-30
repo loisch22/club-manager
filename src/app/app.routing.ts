@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ClubDetailsComponent } from './club-details/club-details.component';
 import { AdminComponent } from './admin/admin.component';
 import { AboutComponent } from './about/about.component';
+import { AddClubComponent } from './add-club/add-club.component';
 
 const appRoutes: Routes = [
   {  path: '',
@@ -20,6 +21,10 @@ const appRoutes: Routes = [
   {
     path:'about',
     component: AboutComponent
+  },
+  {
+    path:'add-club',
+    component: AddClubComponent
   }
 ];
 
