@@ -5,40 +5,41 @@
 <br>
 
 <label>Club address:</label>
-<input [(ngModel)]="selectedClub.address">
+<input #address type="text">
 <br>
 
 <label>Club city:</label>
-<input [(ngModel)]="selectedClub.city">
+<input #city type="text">
 <br>
 
 <label>Club number:</label>
-<input [(ngModel)]="selectedClub.number">
+<input #number type="number">
 <br>
 
 <label>Club image (URL):</label>
-<input [(ngModel)]="selectedClub.image">
+<input #image type="text">
 <br>
 
+<!-- //use a select box
 <label>Club weekend hours available:</label>
-<input [(ngModel)]="selectedClub.weekendHours">
+<input #weekendHours type="text" placeholder="true or false">
 <br>
 
 <label>Club summer hours available:</label>
-<input [(ngModel)]="selectedClub.summerHours">
+<input #summerHours type="text">
 <br>
 
 <label>Club meals provided:</label>
-<input [(ngModel)]="selectedClub.mealsProvided">
+<input #mealsProvided type="text">
 <br>
 
 <label>Club teen center available:</label>
-<input [(ngModel)]="selectedClub.teenCenter">
-<br>
+<input #teenCenter type="text">
+<br> -->
 
 <label>Club website (URL):</label>
-<input [(ngModel)]="selectedClub.website">
+<input #website type="text">
 
-<button (click)="beginUpdatingClub(selectedClub)" class="btn btn-success">Update</button>
+<button (click)="beginUpdatingClub(selectedClub)" class="btn btn-success">Add Club</button>
 
-<button (click)="beginDeletingClub(selectedClub)" class="btn btn-danger">Delete</button>
+<button routerLink="" class="btn btn-danger">Cancel</button>

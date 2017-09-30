@@ -1,0 +1,11 @@
+.header-text {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+  font-size: 35px;
+}
+
+.card {
+  margin-bottom: 10%;
+}
