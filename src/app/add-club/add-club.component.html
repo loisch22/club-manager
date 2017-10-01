@@ -1,45 +1,84 @@
-<h4>Add New Club</h4>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Club to Manage</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Club Name:</label>
+        <br>
+        <input #newName>
+      </div>
 
-<label>Club name:</label>
-<input #name type="text">
-<br>
+      <div>
+        <label>Club Street Address:</label>
+        <br>
+        <input #newAddress>
+      </div>
 
-<label>Club address:</label>
-<input #address type="text">
-<br>
+      <div>
+        <label>Club City:</label>
+        <br>
+        <textarea #newCity></textarea>
+      </div>
 
-<label>Club city:</label>
-<input #city type="text">
-<br>
+      <div>
+        <label>Club Number:</label>
+        <br>
+        <textarea #newNumber placeholder="2062232222"></textarea>
+      </div>
 
-<label>Club number:</label>
-<input #number type="number">
-<br>
+      <div>
+        <label>Club Image (URL):</label>
+        <br>
+        <textarea #newImage></textarea>
+      </div>
 
-<label>Club image (URL):</label>
-<input #image type="text">
-<br>
+      <div>
+        <label>Club Weekend Hours Available:</label>
+        <select>
+          <option #newWeekendHours value=true selected>Yes</option>
+          <option #newWeekendHours value=false>No</option>
+        </select>
+      </div>
 
-<!-- //use a select box
-<label>Club weekend hours available:</label>
-<input #weekendHours type="text" placeholder="true or false">
-<br>
+      <div>
+        <label>Club Summer Hours Available:</label>
+        <select>
+          <option #newSummerHours value=true selected>Yes</option>
+          <option #newSummerHours value=false>No</option>
+        </select>
+      </div>
 
-<label>Club summer hours available:</label>
-<input #summerHours type="text">
-<br>
+      <div>
+        <label>Club Meals Provided:</label>
+        <select>
+          <option #newMealsProvided value=true selected>Yes</option>
+          <option #newMealsProvided value=false>No</option>
+        </select>
+      </div>
 
-<label>Club meals provided:</label>
-<input #mealsProvided type="text">
-<br>
+      <div>
+        <label>Club Teen Center Available:</label>
+        <select>
+          <option #newTeenCenter value=true selected>Yes</option>
+          <option #newTeenCenter value=false>No</option>
+        </select>
+      </div>
 
-<label>Club teen center available:</label>
-<input #teenCenter type="text">
-<br> -->
+      <div>
+        <label>Club Website (URL):</label>
+        <br>
+        <textarea #newWebsite></textarea>
+      </div>
 
-<label>Club website (URL):</label>
-<input #website type="text">
 
-<button (click)="beginUpdatingClub(selectedClub)" class="btn btn-success">Add Club</button>
+      <button (click)="addClub(newName.value, newAddress.value, newCity.value, newNumber.value, newImage.value, newWeekendHours.value, newSummerHours.value, newMealsProvided.value, newTeenCenter.value, newWebsite.value); newName.value=''; newAddress.value=''; newCity.value=''; newNumber.value=''; newImage.value=''; newWeekendHours.value=''; newSummerHours.value=''; newMealsProvided.value=''; newTeenCenter.value=''; newWebsite.value=''">Add</button>
+    </div>
+  </div>
+</div>
 
-<button routerLink="" class="btn btn-danger">Cancel</button>
+<h3>Club List</h3>
+<div>
+  <app-home></app-home>
+</div>

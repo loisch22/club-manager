@@ -20,4 +20,10 @@ export class EditClubComponent implements OnInit {
     this.clubService.updateClub(selectedClub);
   }
 
+  beginDeletingClub(selectedClub){
+    if(confirm("Delete this club?")){
+      this.clubService.deleteClub(selectedClub);
+    }
+  }
+
 }
