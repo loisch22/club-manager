@@ -18,9 +18,8 @@ export class AddClubComponent implements OnInit {
 
   addClub(name: string, address: string, city: string, number: number, image: string, weekendHours: boolean, summerHours: boolean, mealsProvided: boolean, teenCenter: boolean, website: string){
     let newClub: Club = new Club(name, address, city, number, image, weekendHours, summerHours, mealsProvided, teenCenter, website);
-    this.newClubToAdd = newClub;
 
-    this.clubService.addClub(this.newClubToAdd);
+    this.clubService.addClub(newClub);
   }
 
 }
