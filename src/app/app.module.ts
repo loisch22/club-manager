@@ -12,7 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ClubDetailsComponent } from './club-details/club-details.component';
 import { EditClubComponent } from './edit-club/edit-club.component';
 import { AdminComponent } from './admin/admin.component';
-import { ClubPipe } from './club.pipe';
+// import { ClubPipe } from './club.pipe';
 
 
 export const firebaseConfig = {
@@ -29,8 +29,8 @@ export const firebaseConfig = {
     AboutComponent,
     ClubDetailsComponent,
     EditClubComponent,
-    AdminComponent,
-    ClubPipe
+    AdminComponent
+    // ClubPipe
   ],
   imports: [
     BrowserModule,
