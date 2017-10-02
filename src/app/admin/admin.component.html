@@ -36,33 +36,33 @@
 
       <div>
         <label>Club Weekend Hours Available:</label>
-        <select>
-          <option #newWeekendHours value=true selected>Yes</option>
-          <option #newWeekendHours value=false>No</option>
+        <select #newWeekendHours>
+          <option value=true selected>Yes</option>
+          <option value=false>No</option>
         </select>
       </div>
 
       <div>
         <label>Club Summer Hours Available:</label>
-        <select>
-          <option #newSummerHours value=true selected>Yes</option>
-          <option #newSummerHours value=false>No</option>
+        <select #newSummerHours>
+          <option value=true selected>Yes</option>
+          <option value=false>No</option>
         </select>
       </div>
 
       <div>
         <label>Club Meals Provided:</label>
-        <select>
-          <option #newMealsProvided value=true selected>Yes</option>
-          <option #newMealsProvided value=false>No</option>
+        <select #newMealsProvided>
+          <option value=true selected>Yes</option>
+          <option value=false>No</option>
         </select>
       </div>
 
       <div>
         <label>Club Teen Center Available:</label>
-        <select>
-          <option #newTeenCenter value=true selected>Yes</option>
-          <option #newTeenCenter value=false>No</option>
+        <select #newTeenCenter>
+          <option value=true selected>Yes</option>
+          <option value=false>No</option>
         </select>
       </div>
 
@@ -73,7 +73,7 @@
       </div>
 
 
-      <button (click)="addClub(newName.value, newAddress.value, newCity.value, newNumber.value, newImage.value, newWeekendHours.value, newSummerHours.value, newMealsProvided.value, newTeenCenter.value, newWebsite.value); newName.value=''; newAddress.value=''; newCity.value=''; newNumber.value=''; newImage.value=''; newWeekendHours.value=''; newSummerHours.value=''; newMealsProvided.value=''; newTeenCenter.value=''; newWebsite.value=''">Add</button>
+      <button (click)="addClub(newName.value, newAddress.value, newCity.value, newNumber.value, newImage.value, newWeekendHours.value, newSummerHours.value, newMealsProvided.value, newTeenCenter.value, newWebsite.value); newName.value=''; newAddress.value=''; newCity.value=''; newNumber.value=''; newImage.value='';  newWebsite.value=''">Add</button>
     </div>
   </div>
 </div>
