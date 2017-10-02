@@ -17,7 +17,9 @@ export class AdminComponent implements OnInit {
 
   addClub(name: string, address: string, city: string, number: number, image: string, weekendHours: boolean, summerHours: boolean, mealsProvided: boolean, teenCenter: boolean, website: string){
     let newClub: Club = new Club(name, address, city, number, image, weekendHours, summerHours, mealsProvided, teenCenter, website);
-    console.log(newClub);
+    // console.log(newClub.name);
+
+    this.clubService.addNewClub(newClub);
   }
 
 

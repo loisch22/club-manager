@@ -34,7 +34,7 @@ export class ClubService {
     })
   }
 
-  addClub(newClub: Club) {
+  addNewClub(newClub) {
     this.clubs.push(newClub);
   }
 

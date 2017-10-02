@@ -24,6 +24,8 @@ _1. Download github repository: <a>https://github.com/loisch22/club-manager.git<
 
 #Wishlist
 Have `add club` button in admin view NOT navbar.
+Need to be able to add new club.
+Need to be able to filter using pipes.
 
 # ClubManager
 
