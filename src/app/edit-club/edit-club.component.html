@@ -1,3 +1,4 @@
+<hr>
 <h4>Edit Club Details</h4>
 
 <label>Club name:</label>
@@ -39,6 +40,6 @@
 <label>Club website (URL):</label>
 <input [(ngModel)]="selectedClub.website">
 
-<button (click)="beginUpdatingClub(selectedClub)" class="btn btn-success">Update</button>
+<button (click)="beginUpdatingClub(selectedClub)" class="btn btn-success" routerLink="">Update</button>
 
 <button (click)="beginDeletingClub(selectedClub)" class="btn btn-danger">Delete</button>

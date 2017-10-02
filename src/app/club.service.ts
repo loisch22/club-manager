@@ -34,4 +34,13 @@ export class ClubService {
     })
   }
 
+  addNewClub(newClub) {
+    this.clubs.push(newClub);
+  }
+
+  deleteClub(clubToDelete){
+    var clubEntryInFirebase = this.getClubByKey(clubToDelete.$key);
+    clubEntryInFirebase.remove();
+  }
+
 }
