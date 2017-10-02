@@ -5,10 +5,10 @@ export class Club {
     city: string,
     number: number,
     image: string,
-    weekendHours: boolean,
-    summerHours: boolean,
-    mealsProvided: boolean,
-    teenCenter: boolean,
+    weekendHours: boolean = false,
+    summerHours: boolean = false,
+    mealsProvided: boolean = false,
+    teenCenter: boolean = false,
     website: string
   ){}
 }
