@@ -9,7 +9,7 @@ import { ClubService } from '../club.service';
   providers: [ClubService]
 })
 export class AdminComponent implements OnInit {
-
+  clubToAdd: Club;
   constructor(private clubService: ClubService) { }
 
   ngOnInit() {
@@ -17,12 +17,13 @@ export class AdminComponent implements OnInit {
 
   addClub(name: string, address: string, city: string, number: number, image: string, weekendHours: boolean, summerHours: boolean, mealsProvided: boolean, teenCenter: boolean, website: string){
     let newClub: Club = new Club(name, address, city, number, image, weekendHours, summerHours, mealsProvided, teenCenter, website);
+    this.clubToAdd = newClub;
     // let newClub: Club = new Club("name", "address", "city", 2, "image", true, true, true, true, "website");
     // newClub.name = "Walter";
     //
-    console.log(newClub);
+    console.log(this.clubToAdd);
 
-    this.clubService.addNewClub(newClub);
+    this.clubService.addNewClub(this.clubToAdd);
   }
 
 }

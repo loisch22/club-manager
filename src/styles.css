@@ -1,6 +1,7 @@
 #club-image {
   width: 100%;
   height: 200px;
+  cursor: pointer;
 }
 .jumbotron {
   background-image: url("https://veriscreen.net/wp-content/uploads/2016/08/BGC02.jpg");
