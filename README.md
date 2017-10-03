@@ -10,6 +10,16 @@ _This application allows users to view and filter Boys and Girls Clubs in the Se
 
 ## User Story Specifications (BDD)
 _1. Download github repository: <a>https://github.com/loisch22/club-manager.git</a>_
+_2. API key:
+<br>
+`export var masterFirebaseConfig = {
+  apiKey: "AIzaSyATlBUnPZJb_VXhTOQpPG0o1zVxo_PA7l8",
+    authDomain: "club-manger1.firebaseapp.com",
+    databaseURL: "https://club-manger1.firebaseio.com",
+    projectId: "club-manger1",
+    storageBucket: "club-manger1.appspot.com",
+    messagingSenderId: "188297789693"
+  };`
 
 ## User Story Specifications (BDD)
 
@@ -22,7 +32,7 @@ _1. Download github repository: <a>https://github.com/loisch22/club-manager.git<
 | 5. Administrators can edit a clubs information and the new information should be posted on the home page | `click` edit | Form to edit a new club |
 | 6. Administrators can delete a club | `click` delete | Confirmation to delete - Club is deleted from list |
 
-#Wishlist
+## Wishlist
 Have `add club` button in admin view NOT navbar.
 Need to be able to add new club.
 Need to be able to filter using pipes.
